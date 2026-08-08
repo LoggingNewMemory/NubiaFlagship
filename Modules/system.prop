@@ -5,6 +5,7 @@
 ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_broadcast=true
 ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_elvesaid=true
 ro.vendor.feature.zte_feature_redmagickyi_tile_main=true
+ro.vendor.feature.zte_feature_gameassist_plugin_biablo=true
 
 # Enable AI Model Services & Smart MindSync
 ro.vendor.feature.zte_feature_ai_model_service=true
@@ -33,3 +34,27 @@ ro.vendor.feature.sysui_doze_mfv=true
 # Performance tweaks
 ro.vendor.feature.zte_feature_defragment=true
 ro.vendor.lmk.kill_heaviest_task_enabled=true
+
+# Unlock HiFi Audio & Spatial Audio
+persist.vendor.audio.hifi_enabled=true
+ro.audio.spatializer_enabled=true
+
+# Smooth Scrolling & UI Responsiveness
+persist.sys.ss.predict=true
+persist.sys.ss.scroll=true
+persist.sys.choreographer.pre_animation_load=true
+
+# Display Features
+ro.surface_flinger.has_wide_color_display=true
+ro.vendor.feature.sysui_show_hd_disabled=true
+
+# Launcher & Charging Animations
+ro.launcher.dynamic=true
+ro.vendor.feature.zte_charger_mfv_v4=true
+ro.vendor.feature.zte_charger_mfv_v4_adapt=true
+
+# System Hidden Features
+ro.vendor.feature.zte_feature_allow_transform_switch=true
+ro.vendor.feature.zte_feature_heartyservice=true
+ro.vendor.feature.zte_feature_internal_app_hide=true
+ro.vendor.feature.zte_enable_filebrowser=true
