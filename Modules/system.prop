@@ -1,0 +1,35 @@
+# Nubia / RedMagic Hidden Feature Unlocks
+# Brought to you by the Yamada Module
+
+# Enable RedMagic GameAssist Plugins (usually reserved for RedMagic phones)
+ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_broadcast=true
+ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_elvesaid=true
+ro.vendor.feature.zte_feature_redmagickyi_tile_main=true
+
+# Enable AI Model Services & Smart MindSync
+ro.vendor.feature.zte_feature_ai_model_service=true
+ro.vendor.feature.zte_feature_mindsync_samrt_start=true
+ro.vendor.feature.zte_feature_mindsync_cloud_update_enabled=true
+
+# Enable Complex UI Animations & Window Replies
+ro.vendor.feature.myos_feature_complex_animation=true
+ro.vendor.feature.mfv_feature_windowreply=true
+ro.vendor.feature.mfv_feature_windowreply_abroad=true
+ro.vendor.feature.mfv_feature_chooser=true
+
+# Enable Always-On Display (AOD) Fingerprint (usually disabled on budget LCDs)
+ro.vendor.feature.zte_feature_fp_support_aod=true
+ro.vendor.feature.sysui_lcd_aod_support_three_level=true
+
+# Enable Advanced Network Features (VoNR / 5G Voice)
+persist.radio.is_vonr_enabled_0=true
+
+# Enable Live Island Water Drop style
+ro.vendor.feature.zte_feature_live_island_water_drop=true
+
+# Enable SystemUI Doze / Peek
+ro.vendor.feature.sysui_doze_mfv=true
+
+# Performance tweaks
+ro.vendor.feature.zte_feature_defragment=true
+ro.vendor.lmk.kill_heaviest_task_enabled=true
