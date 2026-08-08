@@ -1,2 +1,0 @@
-theme_ID=default_theme_27
-anim_style=9

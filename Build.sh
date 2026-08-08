@@ -114,32 +114,6 @@ EOF
 build_modules() {
     rm -rf "$BUILD_DIR"/*
 
-    echo "--- Compiling FODAnimFix Daemon ---"
-    NDK_ROOT=${ANDROID_NDK_HOME:-$HOME/Android/Sdk/ndk/28.2.13676358}
-    API_LEVEL=30
-    TARGET="aarch64-linux-android${API_LEVEL}"
-    TOOLCHAIN="$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin"
-    CC="$TOOLCHAIN/clang"
-
-    if [ ! -f "$CC" ]; then
-        echo "❌ Error: Clang not found at $CC. Please check NDK_ROOT."
-        exit 1
-    fi
-
-    $CC \
-        --target=$TARGET \
-        -O3 \
-        -Wall \
-        -o "$MODULES_DIR/FODAnimFix" \
-        "Sources/FODAnimFix.c"
-
-    if [ $? -eq 0 ]; then
-        echo "✅ Daemon compiled successfully to $MODULES_DIR/FODAnimFix"
-    else
-        echo "❌ Daemon compilation failed!"
-        exit 1
-    fi
-    echo "---------------------------------"
 
     cd "$MODULES_DIR" || exit 1
     MODULE_ID=$(grep "^id=" "module.prop" | cut -d'=' -f2 | tr -d '[:space:]')
