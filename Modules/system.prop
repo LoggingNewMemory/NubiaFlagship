@@ -23,7 +23,6 @@ ro.vendor.feature.sysui_show_hd_disabled=true
 
 # LIVE ISLAND & SYSTEMUI DOZE
 ro.vendor.feature.zte_feature_live_island_water_drop=true
-ro.vendor.feature.sysui_doze_mfv=true
 
 # LAUNCHER & CHARGING ANIMATIONS
 ro.launcher.dynamic=true
@@ -62,7 +61,6 @@ ro.vendor.feature.zte_feature_autolaunch_white_list_gms=true
 # SECURITY, FINGERPRINT & LOCK
 ro.vendor.feature.skip_password=true
 ro.vendor.feature.default_value_direct_unlock=true
-ro.vendor.feature.zte_init_lcd_while_fingerdown=true
 
 # CAMERA ENHANCEMENTS
 persist.sys.cam.eois.dv.back=true
