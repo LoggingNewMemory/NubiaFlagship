@@ -51,3 +51,31 @@ ro.vendor.feature.zte_feature_allow_transform_switch=true
 ro.vendor.feature.zte_feature_heartyservice=true
 ro.vendor.feature.zte_feature_internal_app_hide=true
 ro.vendor.feature.zte_enable_filebrowser=true
+
+# Security, Unlocking & Fingerprint
+ro.vendor.feature.skip_password=true
+ro.vendor.feature.default_value_direct_unlock=true
+ro.vendor.feature.zte_init_lcd_while_fingerdown=true
+
+# System UI, Display & Launcher Animations
+ro.vendor.feature.zte_feature_show_immersive_mode_comfirmation=true
+ro.vendor.feature.zte_feature_font_hyzhengyuan=true
+ro.vendor.feature.launcher_open_close_app_simple_anim=true
+
+# Performance, Memory & App Launch
+ro.vendor.feature.zte_use_compaction=true
+ro.vendor.feature.quickrtapp=true
+ro.vendor.feature.zte_feature_autolaunch_white_list_gms=true
+
+# Network, Audio & Translation Features
+ro.vendor.feature.zte_feature_streamer_predict_support=true
+ro.vendor.feature.zte_audio_voice_translation_mifavor=true
+ro.vendor.feature.feature_sprd_enable_fiveg_power_save_by_default=true
+
+# Hardware, Charging & LED
+ro.vendor.feature.zte_charger_mfv_v3=true
+ro.vendor.feature.zte_led_mono_chrome=true
+
+# Miscellaneous Core Features
+ro.vendor.feature.zte_feature_xml_capacity=true
+ro.vendor.feature.zte_feature_transform_legacy=true
