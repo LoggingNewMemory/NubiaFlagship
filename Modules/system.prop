@@ -1,102 +1,104 @@
-# Enable RedMagic GameAssist Plugins (usually reserved for RedMagic phones)
+# GAME ASSIST & RedMagic PLUGINS
 ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_broadcast=true
 ro.vendor.feature.zte_feature_gameassist_plugin_redmagic_elvesaid=true
 ro.vendor.feature.zte_feature_redmagickyi_tile_main=true
 ro.vendor.feature.zte_feature_gameassist_plugin_biablo=true
 
-# Enable AI Model Services & Smart MindSync
+# AI MODEL SERVICES & MINDSYNC
 ro.vendor.feature.zte_feature_ai_model_service=true
 ro.vendor.feature.zte_feature_mindsync_samrt_start=true
 ro.vendor.feature.zte_feature_mindsync_cloud_update_enabled=true
 
-# Enable Complex UI Animations & Window Replies
+# SYSTEM UI ANIMATIONS & WINDOW FEATURES
 ro.vendor.feature.myos_feature_complex_animation=true
 ro.vendor.feature.mfv_feature_windowreply=true
 ro.vendor.feature.mfv_feature_windowreply_abroad=true
 ro.vendor.feature.mfv_feature_chooser=true
+ro.vendor.feature.zte_feature_show_immersive_mode_comfirmation=true
+ro.vendor.feature.launcher_open_close_app_simple_anim=true
 
-# Enable Advanced Network Features (VoNR / 5G Voice)
-persist.radio.is_vonr_enabled_0=true
+# DISPLAY & WIDE COLOR
+ro.surface_flinger.has_wide_color_display=true
+ro.vendor.feature.sysui_show_hd_disabled=true
 
-# Enable Live Island Water Drop style
+# LIVE ISLAND & SYSTEMUI DOZE
 ro.vendor.feature.zte_feature_live_island_water_drop=true
-
-# Enable SystemUI Doze / Peek
 ro.vendor.feature.sysui_doze_mfv=true
 
-# Performance tweaks
-ro.vendor.feature.zte_feature_defragment=true
-ro.vendor.lmk.kill_heaviest_task_enabled=true
+# LAUNCHER & CHARGING ANIMATIONS
+ro.launcher.dynamic=true
+ro.vendor.feature.zte_charger_mfv_v4=true
+ro.vendor.feature.zte_charger_mfv_v4_adapt=true
+ro.vendor.feature.zte_charger_mfv_v3=true
+ro.vendor.feature.zte_led_mono_chrome=true
 
-# Unlock HiFi Audio & Spatial Audio
+# AUDIO: HiFi, Spatial, Offload & Volume
 persist.vendor.audio.hifi_enabled=true
 ro.audio.spatializer_enabled=true
+ro.audio.offload_wakelock=true
+persist.audio.bigvolume.enabled=true
+persist.audio.bigvolume.switch=true
 
-# Smooth Scrolling & UI Responsiveness
+# NETWORK: 5G / VoNR
+persist.radio.is_vonr_enabled_0=true
+ro.vendor.feature.feature_sprd_enable_fiveg_power_save_by_default=true
+
+# SMOOTH SCROLLING & UI RESPONSIVENESS
 persist.sys.ss.predict=true
 persist.sys.ss.scroll=true
 persist.sys.choreographer.pre_animation_load=true
 
-# Display Features
-ro.surface_flinger.has_wide_color_display=true
-ro.vendor.feature.sysui_show_hd_disabled=true
+# PERFORMANCE & MEMORY MANAGEMENT
+ro.vendor.lmk.kill_heaviest_task_enabled=true
+ro.vendor.feature.zte_use_compaction=true
+ro.vendor.feature.zte_feature_defragment=true
 
-# Launcher & Charging Animations
-ro.launcher.dynamic=true
-ro.vendor.feature.zte_charger_mfv_v4=true
-ro.vendor.feature.zte_charger_mfv_v4_adapt=true
+# APP LAUNCH SPEED (USAP & Quick RT)
+dalvik.vm.usap_pool_enabled=true
+persist.sys.prefork=true
+ro.vendor.feature.quickrtapp=true
+ro.vendor.feature.zte_feature_autolaunch_white_list_gms=true
 
-# System Hidden Features
-ro.vendor.feature.zte_feature_allow_transform_switch=true
-ro.vendor.feature.zte_feature_heartyservice=true
-ro.vendor.feature.zte_feature_internal_app_hide=true
-ro.vendor.feature.zte_enable_filebrowser=true
-
-# Security, Unlocking & Fingerprint
+# SECURITY, FINGERPRINT & LOCK
 ro.vendor.feature.skip_password=true
 ro.vendor.feature.default_value_direct_unlock=true
 ro.vendor.feature.zte_init_lcd_while_fingerdown=true
 
-# System UI, Display & Launcher Animations
-ro.vendor.feature.zte_feature_show_immersive_mode_comfirmation=true
-ro.vendor.feature.zte_feature_font_hyzhengyuan=true
-ro.vendor.feature.launcher_open_close_app_simple_anim=true
-
-# Performance, Memory & App Launch
-ro.vendor.feature.zte_use_compaction=true
-ro.vendor.feature.quickrtapp=true
-ro.vendor.feature.zte_feature_autolaunch_white_list_gms=true
-
-# Network, Audio & Translation Features
-ro.vendor.feature.zte_feature_streamer_predict_support=true
-ro.vendor.feature.zte_audio_voice_translation_mifavor=true
-ro.vendor.feature.feature_sprd_enable_fiveg_power_save_by_default=true
-
-# Hardware, Charging & LED
-ro.vendor.feature.zte_charger_mfv_v3=true
-ro.vendor.feature.zte_led_mono_chrome=true
-
-# Miscellaneous Core Features
-ro.vendor.feature.zte_feature_xml_capacity=true
-ro.vendor.feature.zte_feature_transform_legacy=true
-
-# Advanced Performance & Hardware (Product/ODM)
-debug.fwk.enable_adpf_cpu_hint=true
-persist.sys.unisoc_game_auto_scale=true
-persist.silent.reboot.enabled=true
-ro.bluetooth.a2dp_offload.supported=true
-ro.vendor.tui.support=true
-
-# Camera Enhancements & EIS
+# CAMERA ENHANCEMENTS
 persist.sys.cam.eois.dv.back=true
 persist.sys.cam.eois.dc.back=true
 persist.sys.cam.eois.dc.front=true
 persist.sys.cam.slow_motion=true
 persist.sys.cam.voicephoto=true
+persist.vendor.cam.xdr.enable=1
+persist.vendor.cam.3dnr=1
+persist.vendor.cam.autovideohdr.enable=1
+persist.vendor.cam.autovideoblur.enable=1
+persist.vendor.cam.lightportrait.ba.enable=1
+persist.vendor.cam.lightportrait.fr.enable=1
 
-# Extreme App Launch Speed (USAP)
-dalvik.vm.usap_pool_enabled=true
-persist.sys.prefork=true
+# BLUETOOTH
+ro.bluetooth.a2dp_offload.supported=true
 
-# Audio Power Saving
-ro.audio.offload_wakelock=true
+# ADVANCED PRODUCT/ODM PERFORMANCE
+debug.fwk.enable_adpf_cpu_hint=true
+persist.sys.unisoc_game_auto_scale=true
+persist.silent.reboot.enabled=true
+
+# TRUSTED UI
+ro.vendor.tui.support=true
+
+# AI TRANSLATION & VOICE
+ro.vendor.feature.zte_audio_voice_translation_mifavor=true
+ro.vendor.feature.zte_feature_streamer_predict_support=true
+
+# FONTS & TYPOGRAPHY
+ro.vendor.feature.zte_feature_font_hyzhengyuan=true
+
+# SYSTEM HIDDEN & MISC FEATURES
+ro.vendor.feature.zte_feature_transform_legacy=true
+ro.vendor.feature.zte_feature_allow_transform_switch=true
+ro.vendor.feature.zte_feature_heartyservice=true
+ro.vendor.feature.zte_feature_internal_app_hide=true
+ro.vendor.feature.zte_enable_filebrowser=true
+ro.vendor.feature.zte_feature_xml_capacity=true
