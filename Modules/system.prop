@@ -79,3 +79,24 @@ ro.vendor.feature.zte_led_mono_chrome=true
 # Miscellaneous Core Features
 ro.vendor.feature.zte_feature_xml_capacity=true
 ro.vendor.feature.zte_feature_transform_legacy=true
+
+# Advanced Performance & Hardware (Product/ODM)
+debug.fwk.enable_adpf_cpu_hint=true
+persist.sys.unisoc_game_auto_scale=true
+persist.silent.reboot.enabled=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.tui.support=true
+
+# Camera Enhancements & EIS
+persist.sys.cam.eois.dv.back=true
+persist.sys.cam.eois.dc.back=true
+persist.sys.cam.eois.dc.front=true
+persist.sys.cam.slow_motion=true
+persist.sys.cam.voicephoto=true
+
+# Extreme App Launch Speed (USAP)
+dalvik.vm.usap_pool_enabled=true
+persist.sys.prefork=true
+
+# Audio Power Saving
+ro.audio.offload_wakelock=true
