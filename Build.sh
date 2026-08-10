@@ -4,7 +4,7 @@ MODULES_DIR="Modules"
 BUILD_DIR="Build"
 
 # Configuration
-VERSION="1.0"
+VERSION="2.0"
 BUILD_TYPE="LAB"
 FLASH="y"
 
