@@ -4,8 +4,7 @@ MODULES_DIR="Modules"
 BUILD_DIR="Build"
 
 # Configuration
-VERSION="2.0"
-BUILD_TYPE="LAB"
+VERSION="3.0"
 FLASH="y"
 
 mkdir -p "$BUILD_DIR"
@@ -130,7 +129,7 @@ build_modules() {
         rm "customize.sh.tmp"
     fi
 
-    ZIP_NAME="${MODULE_ID}-${VERSION}-${BUILD_TYPE}.zip"
+    ZIP_NAME="${MODULE_ID}-${VERSION}.zip"
     ZIP_PATH="../$BUILD_DIR/$ZIP_NAME"
     zip -q -r "$ZIP_PATH" ./*
     echo "Created: $ZIP_NAME"

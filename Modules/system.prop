@@ -21,9 +21,6 @@ ro.vendor.feature.launcher_open_close_app_simple_anim=true
 ro.surface_flinger.has_wide_color_display=true
 ro.vendor.feature.sysui_show_hd_disabled=false
 
-# LIVE ISLAND & SYSTEMUI DOZE
-ro.vendor.feature.zte_feature_live_island_water_drop=true
-
 # LAUNCHER & CHARGING ANIMATIONS
 ro.launcher.dynamic=true
 
